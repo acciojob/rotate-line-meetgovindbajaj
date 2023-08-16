@@ -1,1 +1,31 @@
 /*  your css code here. If applicable */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.line {
+    background-color: black;
+    width: 200px;
+    height: 2px;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    to {
+        rotate: 180deg;
+    }
+
+    from {
+        rotate: 0deg;
+    }
+}
