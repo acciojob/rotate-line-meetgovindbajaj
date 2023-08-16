@@ -12,22 +12,21 @@ body {
 
 #line {
     position: absolute;
-    inset: 50% 50% auto auto;
-    translate: 50% 50%;
-	transform:none;
-    rotate: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)rotate(0deg);
     background-color: black;
     width: 200px;
     height: 2px;
-    animation: rotate 2s infinite linear;
+    animation: rotate 2s reverse infinite linear;
 }
 
 @keyframes rotate {
     to {
-        rotate: 180deg;
+        transform: translate(-50%, -50%) rotate(0deg);
     }
 
     from {
-        rotate: 0deg;
+        transform: translate(-50%, -50%) rotate(180deg);
     }
 }
